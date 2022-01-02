@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>blogSpace</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Georama:wght@300;400;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <h1>blogSpace</h1>
+            </nav>
+        </header>
+
+        <main class="container">
+            <form action="POST" class="post-form" id="form">
+                <label for="title">Title</label>
+                <input id="title" name="title" type="text" required>
+                <label for="textarea">Body</label>
+                <textarea name="textarea" id="textarea" cols="30" rows="5" required></textarea>
+                <button class="btn">Post</button>
+            </form>
+            <div class="posts" id="post-list"></div>
+        </main>
+
+        <footer>
+            <p>Made by Karan Pandit &copy; 2021</p>
+        </footer>
+
+        <!-- js file's -->
+        <script src="js/script.js"></script>
+    
+    </body>
+</html>

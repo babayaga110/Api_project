@@ -1,0 +1,107 @@
+/* font-family: 'Georama', sans-serif; */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Georama', sans-serif;
+    background-color: rgba(255, 192, 203, 0.2);
+    background-image: url(../photos/greek-vase.png);
+}
+nav{
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 1em ;
+}
+h1{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+h3{
+    text-transform: capitalize;
+}
+.container{
+    max-width: 300px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+.post-form{
+    display: grid;
+    padding: 2em 1em;
+    margin: 0;
+}
+label{
+    margin-bottom: 0.5em;
+    font-size: 1.2rem;
+    font-weight: 400;
+} 
+input, 
+textarea{
+    margin-bottom: 1em;
+    padding: 0.4em 0.2em;
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+    background-color: #fd9f3f;
+    background-image: linear-gradient(to right, #ff8000,rgb(250, 71, 71));
+    padding: 0.6em 1.8em;
+    border: 0;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: all 250ms;
+}
+.btn:hover{
+    background-color: #fd9f3f;
+    background-image: linear-gradient(to left, #ff8000, rgb(250,71,71));
+    transform: scale(0.9);
+}
+footer{
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 2em auto;
+    padding: 1em auto;
+
+}
+@media (min-width: 500px){
+    body{
+        font-size: 1.2rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 1.5rem;
+        line-height: 1.3em;
+    }
+    p{
+        font-size: 1.2rem;
+        line-height: 1.3em;
+    }
+    .container{
+        max-width: 960px;
+    }
+    .post-form{
+        max-width: 900px;
+    }
+    label{
+        font-size: 1.5rem;
+    }
+    input, 
+    textarea{
+        font-size: 1.2rem;
+    }
+    .btn{
+        font-size: 1.2rem;
+        padding: 0.8em 2.4em;
+    }
+}
